@@ -138,8 +138,7 @@ button.btn--active::after {
 /* PANEL */
 /* panel needs to adjust to the height of the line automatically */
 .panel {
-    /* display: none; */
-    transition: max-height 200ms ease-out;
+    transition: max-height 300ms linear;
     max-height: 0;
     overflow: hidden;
 }
