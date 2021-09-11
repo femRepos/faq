@@ -4,27 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- external fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- script -->
+  <script src="./scripts/script.js" defer></script>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+  <section class="faq">
+    <div class="illustration">
+      <img id="woman" src="./images/illustration-woman-online-desktop.svg" alt="">
+      <img id="box" src="./images/illustration-box-desktop.svg" alt="">
+    </div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+    <article class="questions">
+      <h1>FAQ</h1>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <div class="question">
+        <button>How many team members can I invite?</button>
+        
+        <!-- <div class="panel"> -->
+        <div class="panel">
+          <p>
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
+          </p>
+        </div>
+      </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+      <hr>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <div class="question">
+        <button>What is the maximum file upload size?</button>
+        
+        <div class="panel">
+          <p>
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="question">
+        <button>How do I reset my password?</button>
+        
+        <div class="panel">
+          <p>
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="question">
+        <button>Can I cancel my subscription?</button>
+        
+        <div class="panel">
+          <p>
+            Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="question">
+        <button>Do you provide additional support?</button>
+        
+        <div class="panel">
+          <p>
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </p>
+        </div>
+      </div>
+      <hr>
+    </article>
+  </section>
   </div>
 </body>
 </html>
