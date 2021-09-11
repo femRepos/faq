@@ -35,14 +35,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 25px;
 }
 
 /* faq container */
 
 .faq {
     max-width: 920px;
-    width: 100%;
+    width: 90%;
     display: flex;
     background-color: white;
     background-image: url(../images/bg-pattern-desktop.svg);
@@ -98,7 +97,8 @@ h1 {
 
 button {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     text-align: left;
     font-weight: 400;
@@ -126,8 +126,10 @@ button:hover {
     color: var(--heading-highlight);
 }
 
+/* fix the button.btn--active bold word size */
+
 button.btn--active {
-    font-weight: 700px;
+    font-weight: 700;
     color: var(--heading-active);
 }
 
@@ -146,6 +148,7 @@ button.btn--active::after {
 .question  p {
     color: var(--paragraph-color);
     margin-top: 10px;
+    text-align: left;
 }
 
 .question > div {
@@ -164,4 +167,57 @@ hr {
     border-color: var(--divider-color);
     border-style: solid;
     margin: 15px 0;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 850px) {
+    /* global */
+    body {
+        text-align: center;
+        padding: 150px 25px 85px;
+    }
+    /* faq */
+
+    .faq {
+        position: relative;
+        background-image: url(../images/bg-pattern-mobile.svg);
+        background-position: top left 50%;
+        background-size: 240px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 525px;
+        min-width: 295px;
+        padding: 135px 25px 40px;
+    }
+
+    /* illustration */
+
+    .illustration {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #woman {
+        width: 240px;
+        min-width: 200px;
+        right: unset;
+        top: -110px;
+    }
+
+    #box {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        width: 90px;
+        animation: none;
+    }
+    /* questions */
+
+    .questions {
+        flex-basis: unset;
+    }
 }
