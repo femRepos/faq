@@ -86,7 +86,6 @@ body {
 
 .questions {
     flex: 0 2 350px;
-    /* width: 60%; */
 }
 
 h1 {
@@ -137,8 +136,8 @@ button.btn--active::after {
     transform: rotate(180deg)
 }
 
-/* PANEL */
-/* panel needs to adjust to the height of the line automatically */
+/* panel */
+
 .panel {
     transition: max-height 300ms linear;
     max-height: 0;
@@ -178,6 +177,7 @@ hr {
         padding: 150px 25px 85px;
         align-items: unset;
     }
+
     /* faq */
 
     .faq {
@@ -216,8 +216,9 @@ hr {
         width: 90px;
         animation: none;
     }
-    /* questions */
 
+    /* questions */
+    
     .questions {
         flex-basis: unset;
     }
