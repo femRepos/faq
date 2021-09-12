@@ -218,8 +218,12 @@ hr {
     }
 
     /* questions */
-    
+
     .questions {
         flex-basis: unset;
+    }
+
+    button:hover {
+        color: inherit;
     }
 }
