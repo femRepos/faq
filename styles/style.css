@@ -176,6 +176,7 @@ hr {
     body {
         text-align: center;
         padding: 150px 25px 85px;
+        align-items: unset;
     }
     /* faq */
 
